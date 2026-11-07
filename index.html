@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leo — Work Out With a Partner, Keep Your Pet Happy</title>
+  <meta name="description" content="Leo is a virtual pet that keeps you and a partner on track. Set a weekly workout goal together, snap a photo every time you work out, and whoever misses pays up." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Leo — Reach your fitness goals, together" />
+  <meta property="og:description" content="Hit your weekly goal with a partner. Whoever misses pays up." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://leofitness.app" />
+  <meta property="og:image" content="https://leofitness.app/assets/app-icon.png" />
+
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=1" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header / logo -->
+    <header class="site-header">
+      <a class="brand" href="/">
+        <img class="brand-logo" src="assets/favicon.png" alt="Leo app icon" />
+        <span class="brand-word">Leo</span>
+      </a>
+    </header>
+
+    <!-- Main panel -->
+    <main class="main-panel">
+      <div class="hero">
+
+        <!-- Hero copy -->
+        <div class="hero-copy">
+          <h1 class="hero-title">Reach your fitness goals
+            <span class="hero-accent">together</span></h1>
+          <p class="hero-sub">Leo is your virtual pet and workout buddy. Pick a weekly goal with a
+            partner, show up for each other, and keep Leo happy.</p>
+
+          <ul class="tiles">
+            <li class="tile tile-orange">Hit your weekly goal together</li>
+            <li class="tile tile-teal">Whoever misses pays up</li>
+            <li class="tile tile-blue">Snap a photo every time you work out</li>
+          </ul>
+
+          <div class="hero-cta">
+            <!-- Swap for the App Store link once the listing is live. -->
+            <span class="store-badge is-soon" aria-label="Coming soon to the App Store">
+              <img src="assets/app-store-badge.svg" alt="Download on the App Store" width="180" height="60" />
+            </span>
+            <span class="soon-note">Coming soon to iPhone</span>
+          </div>
+        </div>
+
+        <!-- Leo on his hill -->
+        <div class="scene" aria-hidden="true">
+          <div class="hill hill-back"></div>
+          <div class="hill hill-front"></div>
+          <img class="leo" src="assets/leo.png" alt="" />
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <nav class="footer-links">
+        <a href="mailto:support@leofitness.app">Contact Us</a>
+      </nav>
+      <span class="footer-copy">&copy; <span id="year">2026</span> Leo</span>
+    </footer>
+
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Public website repo: only site files belong here. Never add app code.
+.DS_Store
+.claude/
+*.swift
+*.xcodeproj/
+*.xcworkspace/
+*.riv
+*.env
+supabase/
