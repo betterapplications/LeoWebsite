@@ -7,3 +7,5 @@
 *.riv
 *.env
 supabase/
+# The homepage animation (an exported asset, not app code)
+!assets/leo.riv

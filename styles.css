@@ -155,17 +155,58 @@ a { text-decoration: none; color: inherit; }
   width: auto;
   max-width: none;
   transform: translateX(-50%);
-  transform-origin: bottom center;
-  animation: hop 2.4s ease-in-out infinite;
 }
-@keyframes hop {
-  0%, 70%, 100% { transform: translateX(-50%) translateY(0); }
-  80% { transform: translateX(-50%) translateY(-6%); }
-  90% { transform: translateX(-50%) translateY(0) scaleY(0.97); }
+/* The Rive Leo, drawn over the still one; the still hides once the file has loaded. */
+.leo-rive {
+  position: absolute;
+  left: 50%;
+  bottom: 7%;
+  height: 82%;
+  aspect-ratio: 846 / 941;
+  transform: translateX(-50%);
+  visibility: hidden;
 }
-@media (prefers-reduced-motion: reduce) {
-  .leo { animation: none; }
+.scene.is-live .leo-rive { visibility: visible; }
+.scene.is-live .leo { visibility: hidden; }
+
+/* Legal pages (Terms, Privacy) */
+.legal {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 24px 64px;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--body-muted);
 }
+.legal h1 {
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 600;
+  color: var(--ink);
+}
+.legal-date {
+  margin: 6px 0 28px;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--orange-dark);
+}
+.legal h2 {
+  margin: 36px 0 8px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.legal p { margin: 0 0 12px; }
+.legal ul { margin: 0 0 12px; padding-left: 22px; }
+.legal li { margin-bottom: 8px; }
+.legal strong { color: var(--ink); }
+.legal a { color: var(--orange-dark); text-decoration: underline; }
 
 /* Footer */
 .site-footer {
